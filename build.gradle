@@ -1,12 +1,16 @@
 repositories {
-    mavenLocal()
-    jcenter()
+        mavenCentral()
+    maven {
+        url "https://jcenter.bintray.com"
+    }
 }
 
 buildscript {
     repositories {
-        mavenLocal()
-        jcenter()
+            mavenCentral()
+    maven {
+        url "https://jcenter.bintray.com"
+    }
     }
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:1.1.1")
