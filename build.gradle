@@ -28,4 +28,10 @@ dependencies {
     testCompile('junit:junit:4.12')
     compile('org.assertj:assertj-core:1.7.0')
 }
+
+task testt(type: Test) {
+    useJUnit()
+    systemProperty "serenity.properties", System.getProperty("serenity.properties")
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+}
 gradle.startParameter.continueOnFailure = true
