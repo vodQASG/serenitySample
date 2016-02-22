@@ -2,13 +2,20 @@ package steps;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import net.serenitybdd.core.Serenity;
 import pages.GoogleHomePage;
 
 public class GoogleSearch extends Serenity {
     GoogleHomePage googleHomePage;
-    @Given("^I am on google home page$")
-    public void I_am_on_google_home_page() throws Throwable {
-        googleHomePage.open();
+
+    @When("^I search ThoughtWorks$")
+    public void searchText(){
+        googleHomePage.enterSearchText("ThoughtWorks");
+    }
+
+    @When("^I submit search$")
+    public void submitSearch() {
+        googleHomePage.submitSearch();
     }
 }
