@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.core.Serenity;
 import pages.GoogleHomePage;
 
-public class GoogleSearch extends Serenity {
+public class GoogleSearch {
     GoogleHomePage googleHomePage;
 
     @When("^I search ThoughtWorks$")
