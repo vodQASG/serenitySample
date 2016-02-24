@@ -31,8 +31,13 @@ dependencies {
     testCompile('org.slf4j:slf4j-simple:1.7.13')
 }
 
-task testt(type: Test) {
-    useJUnit()
+test{
+    testLogging{
+        showStandardStreams=true
+    }
+}
+
+tasks.withType(Test) {
     systemProperty "properties", System.getProperty("serenity.properties")
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
 }
