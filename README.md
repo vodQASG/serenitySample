@@ -8,4 +8,4 @@
 * **Step 4**: Open as gradle project
 
 ##Run Tests (CommandLine)
-gradle clean test aggregate -Dserenity.properties=/test-properties/chrome.propertie -Dcucumber.options="--tags @smoke"
+gradle clean test aggregate -Dserenity.properties=/test-properties/chrome.properties -Dcucumber.options="--tags @smoke"
