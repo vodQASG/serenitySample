@@ -12,6 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GoogleSearch {
     GoogleHomePage googleHomePage;
 
+    @Given("^I am on google home page$")
+    public void openGoogleHomePage() throws Throwable {
+        googleHomePage.open();
+    }
+
     @When("^I search ThoughtWorks$")
     public void searchText(){
         googleHomePage.enterSearchText("ThoughtWorks");
@@ -26,4 +31,6 @@ public class GoogleSearch {
     public void verifyFirstSearchedLink(String expectedFirstSearchLinkText) {
         assertThat(googleHomePage.getFirstSearchedLinkText()).isEqualTo(expectedFirstSearchLinkText);
     }
+
+
 }
