@@ -16,7 +16,6 @@ public class GoogleHomePage extends PageObject{
     private WebElementFacade firstSearchedLink;
 
     public void enterSearchText(String serachText){
-        getDriver().get("https://www.google.com");
         searchInput.sendKeys(serachText);
     }
 
