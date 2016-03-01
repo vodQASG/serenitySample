@@ -15,6 +15,9 @@ public class GoogleHomePage extends PageObject{
     @FindBy(xpath="//*[@id='rso']/div[1]/div/div/h3/a")
     private WebElementFacade firstSearchedLink;
 
+    @FindBy(css = ".sbqs_c")
+    private WebElementFacade firstListedSearchAlternative;
+
     public void enterSearchText(String serachText){
         searchInput.sendKeys(serachText);
     }
@@ -25,5 +28,9 @@ public class GoogleHomePage extends PageObject{
 
     public String getFirstSearchedLinkText(){
         return firstSearchedLink.getText();
+    }
+
+    public String getFirstListedSearchAlternative() {
+        return firstListedSearchAlternative.getText();
     }
 }

@@ -32,5 +32,8 @@ public class GoogleSearch {
         assertThat(googleHomePage.getFirstSearchedLinkText()).isEqualTo(expectedFirstSearchLinkText);
     }
 
-
+    @Then("^I see at least one listed alternative search options$")
+    public void iSeeAtLeastOneListedAlternativeSearchOptions() throws Throwable {
+        assertThat(googleHomePage.getFirstListedSearchAlternative()).isNotNull();
+    }
 }
