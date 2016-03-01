@@ -17,7 +17,7 @@ public class GoogleSearch {
         googleHomePage.open();
     }
 
-    @When("^I search ThoughtWorks$")
+    @When("^I type ThoughtWorks as search text$")
     public void searchText(){
         googleHomePage.enterSearchText("ThoughtWorks");
     }
