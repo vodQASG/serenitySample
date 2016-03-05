@@ -1,7 +1,7 @@
 # serenitySample
 
 ## Pre Requisite
- Download jdk 1.8, Gradle and chromedriver
+ Download Gradle, jdk 1.8 and chromedriver
 
  **Setup Gradle and JAVA_HOME**
  
@@ -26,8 +26,8 @@
   Same steps as previous except for Steps 1 & 2
 * **Step 1**: brew install gradle
 * **Step 2**: Taken care by Brew, the symlink '/usr/local/bin/gradle' would have been created already 
-* **Step 3**: FOLLOW STEP 3 OF PREVIOUS SECTION 
-* **Step 4**: FOLLOW STEP 4 OF PREVIOUS SECTION
+* **Step 3**: [Follow STEP 3 of previous section]
+* **Step 4**: [Follow STEP 4 of previous section]
 * **Step 5**: brew install chromedriver
 
 ## Clone and Import the Sample
