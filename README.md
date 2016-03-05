@@ -26,8 +26,8 @@
   Same steps as previous except for Steps 1 & 2
 * **Step 1**: brew install gradle
 * **Step 2**: Taken care by Brew, the symlink '/usr/local/bin/gradle' would have been created already 
-* **Step 3**: SAME AS PREVIOUS
-* **Step 4**: SAME AS PREVIOUS
+* **Step 3**: FOLLOW STEP 3 OF PREVIOUS SECTION 
+* **Step 4**: FOLLOW STEP 4 OF PREVIOUS SECTION
 * **Step 5**: brew install chromedriver
 
 ## Clone and Import the Sample
