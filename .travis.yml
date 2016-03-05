@@ -1,5 +1,8 @@
 language: java
 jdk:
 - oraclejdk8
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 script: gradle clean test aggregate -Dserenity.properties=test-properties/firefox.properties -Dcucumber.options="--tags @smoke"
 
