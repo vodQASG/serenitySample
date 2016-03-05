@@ -1,5 +1,5 @@
 language: java
 jdk:
 - oraclejdk8
-script: gradle clean test aggregate -Dserenity.properties=test-properties/chrome.properties -Dcucumber.options="--tags @smoke"
+script: gradle clean test aggregate -Dserenity.properties=test-properties/firefox.properties -Dcucumber.options="--tags @smoke"
 
