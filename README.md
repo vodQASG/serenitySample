@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/vodQASG/serenitySample.svg?branch=master)](https://travis-ci.org/vodQASG/serenitySample)
-
-# serenitySample
+# serenitySample   [![Build Status](https://travis-ci.org/vodQASG/serenitySample.svg?branch=master)](https://travis-ci.org/vodQASG/serenitySample)
 
 ## Pre Requisite
  Download Gradle, jdk 1.8 and chromedriver
