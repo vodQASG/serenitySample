@@ -13,27 +13,28 @@ public class GoogleSearch {
     GoogleHomePage googleHomePage;
 
     @Given("^I am on google home page$")
-    public void openGoogleHomePage() throws Throwable {
+    public void iAmOnGoogleHomePage(){
         googleHomePage.open();
     }
 
-    @When("^I type ThoughtWorks as search text$")
-    public void searchText(){
-        googleHomePage.enterSearchText("ThoughtWorks");
+    @When("^I type \"([^\"]*)\" as search text$")
+    public void iTypeAsSearchText(String searchText){
+        googleHomePage.enterSearchText(searchText);
     }
 
     @When("^I submit search$")
-    public void submitSearch() {
+    public void iSubmitSearch(){
         googleHomePage.submitSearch();
     }
 
-    @Then("^I see first result as (.*)$")
-    public void verifyFirstSearchedLink(String expectedFirstSearchLinkText) {
+    @Then("^I see first result as \"([^\"]*)\"$")
+    public void iSeeFirstResultAs(String expectedFirstSearchLinkText){
         assertThat(googleHomePage.getFirstSearchedLinkText()).isEqualTo(expectedFirstSearchLinkText);
     }
 
     @Then("^I see at least one listed alternative search options$")
-    public void iSeeAtLeastOneListedAlternativeSearchOptions() throws Throwable {
+    public void iSeeAtLeastOneListedAlternativeSearchOptions(){
         assertThat(googleHomePage.getFirstListedSearchAlternative()).isNotNull();
     }
+
 }
