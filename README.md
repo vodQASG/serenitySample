@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vodQASG/serenitySample.svg?branch=master)](https://travis-ci.org/vodQASG/serenitySample)
+
 # serenitySample
 
 ## Pre Requisite
